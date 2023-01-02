@@ -8,15 +8,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Listeners;
 
 @CucumberOptions(
-        features = {"src/test/java/FeatureFiles/Mer_10_Fields.feature"},
+        features = {"src/test/java/FeatureFiles/Mer_04_Discounts.feature"},
         glue = {"StepDefinitions"},
         plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 )
 @Listeners({ExtentITestListenerClassAdapter.class})
-public class _07_TestRunnerExtentReportFields extends AbstractTestNGCucumberTests {
+public class _07_TestRunnerExtentReport_hy extends AbstractTestNGCucumberTests {
     @AfterClass
     public static void writeExtentReport() {
-        ExtentService.getInstance().setSystemInfo("User Name", "İbrahim Figen");
+        ExtentService.getInstance().setSystemInfo("User Name", "Huseyin YILMAZ");
         ExtentService.getInstance().setSystemInfo("Application Name", "Campus");
         ExtentService.getInstance().setSystemInfo("Operating System Info", System.getProperty("os.name").toString());
         ExtentService.getInstance().setSystemInfo("Department", "QA");

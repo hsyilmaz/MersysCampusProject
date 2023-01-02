@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        tags = "@Regression_hy",
+        tags = "@Regression_HY",
         features = {"src/test/java/FeatureFiles/"},
         glue = {"StepDefinitions"},
         //plugin = {"html:target//cucumber-reports.html"}
